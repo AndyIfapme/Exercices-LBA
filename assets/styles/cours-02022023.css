@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .tablet,
+    .desktop {
+        display: none;
+    }
+
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 999px) {
+    .mobile, .desktop {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+    .mobile, .tablet {
+        display: none;
+    }
+}

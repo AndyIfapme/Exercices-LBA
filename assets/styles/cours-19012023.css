@@ -1,0 +1,14 @@
+@import "common.css";
+
+input {
+    margin-bottom: 20px;
+}
+
+input[type="number"], input[type="radio"]~label {
+    background-color: var(--bg-color-primary);
+    color: white;
+}
+
+input[type="checkbox"] {
+    margin-bottom: initial;
+}

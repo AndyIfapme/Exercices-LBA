@@ -1,0 +1,55 @@
+body {
+    padding: 20px;
+}
+
+.text-red {
+    color: red;
+}
+
+p.text-red {
+    color: green;
+}
+
+p+p {
+    color: purple;
+}
+
+p:first-child {
+    color: chocolate;
+}
+
+p:hover {
+    background-color: beige;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+section {
+    border: solid black 1px;
+}
+
+/* .div p {
+    color: blue;
+} */
+
+.div>section>p+p {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: black;
+}

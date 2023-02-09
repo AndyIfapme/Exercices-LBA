@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/cours-19012023.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form method="post" action="server_url">
+        <fieldset>
+            <legend>Vos données personnelles</legend>
+
+            <label for="firstname">Votre Prénom :</label><br>
+            <input type="text" id="firstname" name="firstname" maxlength="30" required>
+
+            <input type="text" id="lastname" name="lastname" placeholder="Votre Nom" maxlength="30" required>
+            <br>
+
+            <label for="birth">Votre date de naissance :</label><br>
+            <input type="date" name="birth" id="birth" required>
+
+            <p>Votre sexe :</p>
+            <input type="radio" id="sexe-m" name="sexe" value="m">
+            <label for="sexe-m">Masculin</label>
+
+            <input type="radio" id="sexe-f" name="sexe" value="f">
+            <label for="sexe-f">Féminin</label>
+            <input type="radio" id="sexe-other" name="sexe" value="a">
+            <label for="sexe-other">Autre</label><br>
+
+            <fieldset>
+                <legend>Votre adresse</legend>
+                <input 
+                    type="text" 
+                    name="address" 
+                    id="address"
+                    placeholder="Votre adresse"
+                >
+                <input 
+                    type="number" 
+                    name="adress_number" 
+                    id="adress_number" 
+                    placeholder="Numéro"
+                >
+            </fieldset>
+        </fieldset>
+
+        <p>Votre moyen de transports : </p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Walk">
+        <label for="vehicle1">A pied</label><br>
+        
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">En voiture</label><br>
+        
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+        <label for="vehicle3">A vélo</label><br>
+        
+        <input type="checkbox" id="vehicle4" name="vehicle4" value="Bus">
+        <label for="vehicle4">En bus</label><br>
+      
+        <input type="password" name="pwd" id="pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+
+</html>
